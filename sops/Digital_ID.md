@@ -14,3 +14,7 @@ If the steps above are confirmed, perform the following in order:
 2. **Clear Storage:** Clear App Cache and Data in phone settings.
 3. **Re-sync:** Login again and check the Digital ID section.
 
+
+---
+### 📊 Process Flowchart
+![Digital ID Troubleshooting Flow](PASTE_YOUR_LINK_HERE)
