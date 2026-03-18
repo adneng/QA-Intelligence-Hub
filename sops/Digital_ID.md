@@ -44,3 +44,4 @@ graph TD
     style End fill:#a31d21,color:#fff
     style UpdateFound fill:#ffcc80
     style DNIDisplays fill:#ffcc80
+    style DNIDisplays fill:#ffcc80
