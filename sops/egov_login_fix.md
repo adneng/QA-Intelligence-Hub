@@ -6,10 +6,11 @@
 
 ### 🛠️ Technical Fixes
 
-1. **Verify Credentials** Make sure the user is entering the correct email or phone number linked to their account. Check for: 
-   * Typos 
-   * Extra spaces 
-   * Correct country code (+63 for PH)
+### **A. Login via Email Address**
+   • Possible Issues
+      • Hindi nakaka-receive ng Email Code (OTP)
+      • Mali ang nailagay na email address
+      • Walang existing account gamit ang email
 
 2. **Check App Version & Connectivity** .
    * Confirm the user is using the latest version of eGovPH App
