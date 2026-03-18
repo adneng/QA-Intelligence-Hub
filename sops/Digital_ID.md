@@ -45,7 +45,7 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 ### **NOTES**
 ● Tanging PSA lamang ang may authority na mag-update o mag-correct ng impormasyon ng isang user sa kanilang database.
 
-● Pagdating sa timeline, PSA lamang ang makakapagbigay nito dahil ito ay bahagi ng kanilang internal process. Dahil dito, ang eGov Support ay hindi maaaring magbigay ng specific timeframe kung kailan maaayos ang concern.
+● Pagdating sa timeline, PSA lamang ang makakapagbigay nito dahil ito ay bahagi ng kanilang internal process. **_Dahil dito, ang eGov Support ay hindi maaaring magbigay ng specific timeframe kung kailan maaayos ang concern._**
 
 ● Para sa follow-ups ng DNI-related issues, maaaring makipag-ugnayan sa info@philsys.gov.ph
 
