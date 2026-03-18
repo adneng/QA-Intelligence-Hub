@@ -2,7 +2,7 @@
 
 **System:** eGovPH App / eKYC | **Category:** Identity Verification
 
-Ang guide na ito ay para sa mga issues habang nag-su-submit ng face capture o eKYC process.
+Ang guide na ito ay para sa mga issues habang nag-su-submit ng face capture/live selfie.
 
 ---
 
@@ -13,13 +13,11 @@ Ang guide na ito ay para sa mga issues habang nag-su-submit ng face capture o eK
 * Low lighting o overexposed (masyadong maliwanag) na environment.
 * Face is not centered o partially visible lang.
 * Camera is blocked o madumi ang lens.
-* Camera permission is disabled sa phone settings.
 
 **Resolution:**
 1. **Lighting:** Siguraduhing maliwanag ang harap ng mukha at walang "backlight."
 2. **Alignment:** I-gitna ang mukha sa frame; dapat buong mukha ang nakikita.
 3. **Hardware Check:** Linisin ang camera lens.
-4. **Permissions:** I-enable ang *Camera Permission* sa App Settings.
 
 &nbsp;
 &nbsp;
@@ -50,13 +48,14 @@ Ang guide na ito ay para sa mga issues habang nag-su-submit ng face capture o eK
 
 **Possible Causes:**
 * Unstable na internet connection.
-* API timeout o mabagal na response mula sa server.
+* API Timeout/Server Timeout 
 * Network switching (halimbawa: biglang lumipat mula WiFi papuntang Data).
 
 **Resolution:**
 1. **Connection:** Lumipat sa stable na WiFi o malakas na data signal.
 2. **Cooldown:** Subukan ulit pagkalipas ng ilang minuto.
 3. **Consistency:** Iwasang magpalit ng network habang ongoing ang capture.
+4. Clear data/cache to reset session
 
 &nbsp;
 &nbsp;
