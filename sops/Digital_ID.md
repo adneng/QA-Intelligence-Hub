@@ -12,8 +12,7 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 * **Agency Registration:** Nag-register na ba ang user sa PSA (ePhilID/PVC)?
     * *Note: Ang eGov App ay tagafetch lang ng data; dapat existing ang record sa PSA.*
 * **Information Changes:** May binago ba sa information kamakailan? (e.g., corrected spelling, change status).
-* **Agency Confirmation:** Kinumpirma ba ng PSA na updated na ang record?
-
+* **Agency Confirmation:** Kinumpirma ba ng PSA na updated na ang record? Confirmed na ang changes kapag na-issuehan na si user ng bagong ePhilID with changes reflecting.
 ---
 
 ### 🛠️ Step 2: Technical Fixes (The "Basic" Reset)
