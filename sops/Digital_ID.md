@@ -15,32 +15,32 @@ If the steps above are confirmed, perform the following in order:
 3. **Re-sync:** Login again and check the Digital ID section.
 
 graph TD
-Start([START]) --> Confirm[Confirm Registration]
-Confirm --> Recent{Ask if there's<br/>Recent PSA Update}
+    Start([START]) --> Confirm[Confirm Registration]
+    Confirm --> Recent{Ask if there's<br/>Recent PSA Update}
     
-PVC[WITH ePhilID OR PVC] --> Recent
+    PVC[WITH ePhilID OR PVC] --> Recent
     
-Recent --> UpdateFound{PSA Update<br/>Found?}
+    Recent --> UpdateFound{PSA Update<br/>Found?}
     
-%% YES PATH
-UpdateFound -- YES --> Issued[ISSUED NEW ePhilID]
-Issued --> Delete[DELETE ACCOUNT]
-Delete --> ReVerify[RE-VERIFY USING THE<br/>UPDATED INFORMATION]
-ReVerify --> DNIDisplays{DNI DISPLAYS?}
+    %% YES PATH
+    UpdateFound -- YES --> Issued[ISSUED NEW ePhilID]
+    Issued --> Delete[DELETE ACCOUNT]
+    Delete --> ReVerify[RE-VERIFY USING THE<br/>UPDATED INFORMATION]
+    ReVerify --> DNIDisplays{DNI DISPLAYS?}
     
-DNIDisplays -- YES --> End([END])
-DNIDisplays -- NO --> Inform[INFORM THE DNI TEAM]
+    DNIDisplays -- YES --> End([END])
+    DNIDisplays -- NO --> Inform[INFORM THE DNI TEAM]
     
-%% NO PATH
-UpdateFound -- NO --> Log[LOG CONCERN TO<br/>'NO CONNECTION FORM']
-Log --> PSAs[PSA'S HANDLING]
-PSAs --> Intervention[DNI TEAM INTERVENTION]
-Intervention --> End
+    %% NO PATH
+    UpdateFound -- NO --> Log[LOG CONCERN TO<br/>'NO CONNECTION FORM']
+    Log --> PSAs[PSA'S HANDLING]
+    PSAs --> Intervention[DNI TEAM INTERVENTION]
+    Intervention --> End
     
-Inform --> PSAs
+    Inform --> PSAs
     
-%% Styling
-style Start fill:#85a828,color:#fff
-style End fill:#a31d21,color:#fff
-style UpdateFound fill:#ffcc80
-style DNIDisplays fill:#ffcc80
+    %% Styling
+    style Start fill:#85a828,color:#fff
+    style End fill:#a31d21,color:#fff
+    style UpdateFound fill:#ffcc80
+    style DNIDisplays fill:#ffcc80
