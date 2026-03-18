@@ -42,7 +42,6 @@ def mermaid(code):
         """,
         height=2000,
     )
-    )
 
 st.title("🛡️ QA Ops Intelligence Hub")
 
