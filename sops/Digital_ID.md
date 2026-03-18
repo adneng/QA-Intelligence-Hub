@@ -58,8 +58,9 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 
 
 ### 📊 Process Map
-> **Pro-Tip for Staff:** Laging i-check kung "No Connection" ang error o "Record Not Found." Pag "Record Not Found," madalas ay nasa PSA side ang kulang (Step 1).
 ![Digital ID Flowchart](https://github.com/adneng/QA-Intelligence-Hub/blob/main/sops/DNI%20FLOWCHART.jpg?raw=true)
+
+> **Pro-Tip for Staff:** Laging i-check kung "No Connection" ang error o "Record Not Found." Pag "Record Not Found," madalas ay nasa PSA side ang kulang (Step 1).
 
 
 
