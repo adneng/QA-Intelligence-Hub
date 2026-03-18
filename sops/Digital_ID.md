@@ -14,6 +14,7 @@ If the steps above are confirmed, perform the following in order:
 2. **Clear Storage:** Clear App Cache and Data in phone settings.
 3. **Re-sync:** Login again and check the Digital ID section.
 
+```mermaid
 graph TD
     Start([START]) --> Confirm[Confirm Registration]
     Confirm --> Recent{Ask if there's<br/>Recent PSA Update}
@@ -43,5 +44,4 @@ graph TD
     style Start fill:#85a828,color:#fff
     style End fill:#a31d21,color:#fff
     style UpdateFound fill:#ffcc80
-    style DNIDisplays fill:#ffcc80
     style DNIDisplays fill:#ffcc80
