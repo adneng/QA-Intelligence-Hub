@@ -7,23 +7,24 @@
 ### 🛠️ Technical Fixes
 
 ### **A. Login via Email Address**
-   • Possible Issues
-      • Hindi nakaka-receive ng Email Code (OTP)
-      • Mali ang nailagay na email address
-      • Walang existing account gamit ang email
+* Possible Issues
+  * Hindi nakaka-receive ng Email Code (OTP)
+   * Mali ang nailagay na email address
+  * Walang existing account gamit ang email
+* Basic Checks:
+  * Check Spam/Junk folder para sa OTP email
+  * Siguraduhing tama ang spelling ng email
+  * I-confirm kung registered na ang email sa eGovPH App
+ 
+    
 
-2. **Check App Version & Connectivity** .
-   * Confirm the user is using the latest version of eGovPH App
-   * Ensure stable internet connection (Wi-Fi or mobile data)
+### **B. Login via Phone Number**
+* Possible Issues
+  * Hindi nakaka-receive ng OTP (SMS)
+  * Mali ang nailagay na phone number
+  * Walang existing account gamit ang number
+* Basic Checks:
+  * Check SMS inbox & blocked messages
+  * Siguraduhing tama ang format ng number (e.g., 09XXXXXXXXX)
 
-3. **Clear Cache / Reinstall App**. 
-   * Clear app cache and data (Settings → Apps → eGovPH → Storage → Clear Cache)
-   * If problem persists, uninstall and reinstall the app.
-
-4. **Device-Specific Issues** 
-   * Check for OS updates; older versions may cause compatibility issues.
-
-5. **Escalate to QA Team** If all else fails, escalate to support/dev team with: 
-   * Device model & OS version 
-   * Email/phone attempted 
-   * Screenshot/Screen recording of error message
+  
