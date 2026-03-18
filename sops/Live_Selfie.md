@@ -1,4 +1,4 @@
-🔍 Issue 1: Face Not Detected
+#🔍 Issue 1: Face Not Detected
 Possible Causes:
 Low lighting / overexposed environment
 
