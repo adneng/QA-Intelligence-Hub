@@ -1,6 +1,6 @@
 # 🛡️ Digital National ID: Sync Issues
 
-**System:** eGovPH / PSA | **Category:** Data Fetching
+**System:** eGovPH App / PSA | **Category:** National ID Fetching
 
 Ang guide na ito ay para sa mga user na hindi lumalabas ang Digital ID o hindi nag-si-sync ang data mula sa PSA.
 
