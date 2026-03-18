@@ -15,8 +15,8 @@
   * Check Spam/Junk folder para sa OTP email
   * Siguraduhing tama ang spelling ng email
   * I-confirm kung registered na ang email sa eGovPH App
- 
-    
+
+---
 
 ### **B. Login via Phone Number**
 * Possible Issues
@@ -26,5 +26,15 @@
 * Basic Checks:
   * Check SMS inbox & blocked messages
   * Siguraduhing tama ang format ng number (e.g., 09XXXXXXXXX)
+ 
+&nbsp;
+&nbsp;
+
+### **Resolution Path**
+* If no OTP received → Retry after a few minutes / check connection
+* If wrong details → I-correct at i-try ulit
+* If no account → Advise user to register first
+* If issue persists → escalate for further checking
+
 
   
