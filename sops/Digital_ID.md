@@ -33,8 +33,8 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
     * Pag lumabas ang DNI -> **SUCCESS (END)**.
     * Pag ayaw pa rin -> **Inform DNI Team** para sa escalation.
 
-* &nbsp;
-* &nbsp;
+&nbsp;
+&nbsp;
 
 #### **Path: PSA Update Found? (NO)**
 1.  **Log Concern:** I-record ang issue sa **"No Connection Form"**.
@@ -48,8 +48,8 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 
 ---
 
-* &nbsp;
-* &nbsp;
+&nbsp;
+&nbsp;
 
 ### **NOTES**
 ● Tanging PSA lamang ang may authority na mag-update o mag-correct ng impormasyon ng isang user sa kanilang database.
@@ -59,11 +59,8 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 ● Para sa follow-ups ng DNI-related issues, maaaring makipag-ugnayan sa info@philsys.gov.ph
 
 
-
-
-
-
-
+&nbsp;
+&nbsp;
 
 
 ### 📊 Process Map
