@@ -8,15 +8,40 @@ st.set_page_config(page_title="QA Ops Hub", page_icon="🛡️", layout="wide")
 def mermaid(code):
     st.components.v1.html(
         f"""
-        <pre class="mermaid">
-            {code}
-        </pre>
+        <div id="mermaid-container">
+            <style>
+                /* Force all text inside the SVG to be black */
+                .mermaid text {{
+                    fill: black !important;
+                    font-weight: bold !important;
+                    font-family: 'sans-serif' !important;
+                }}
+                /* Force the labels on the arrows (YES/NO) to be black */
+                .mermaid .edgeLabel {{
+                    color: black !important;
+                    background-color: white !important;
+                    padding: 2px !important;
+                }}
+            </style>
+            <pre class="mermaid">
+                {code}
+            </pre>
+        </div>
         <script type="module">
             import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-            mermaid.initialize({{ startOnLoad: true, theme: 'dark' }});
+            mermaid.initialize({{ 
+                startOnLoad: true, 
+                theme: 'base',
+                themeVariables: {{
+                    'primaryColor': '#ffffff',
+                    'edgeLabelBackground':'#ffffff',
+                    'tertiaryColor': '#ffffff'
+                }}
+            }});
         </script>
         """,
-        height=2000, # Dinagdagan natin 'to para hindi putol!
+        height=2000,
+    )
     )
 
 st.title("🛡️ QA Ops Intelligence Hub")
