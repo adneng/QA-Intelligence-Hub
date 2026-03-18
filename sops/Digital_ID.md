@@ -27,7 +27,7 @@ graph TD
     UpdateFound -- YES --> Issued[ISSUED NEW ePhilID]
     Issued --> Delete[DELETE ACCOUNT]
     Delete --> ReVerify[RE-VERIFY USING THE<br/>UPDATED INFORMATION]
-    ReVerify --> DNIDisplays{DNI<br/>Displays?}
+    ReVerify --> DNIDisplays{DNI DISPLAYS?}
     
     DNIDisplays -- YES --> End([END])
     DNIDisplays -- NO --> Inform[INFORM THE DNI TEAM]
