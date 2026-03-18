@@ -16,7 +16,7 @@ def mermaid(code):
             mermaid.initialize({{ startOnLoad: true, theme: 'dark' }});
         </script>
         """,
-        height=1000, # Dinagdagan natin 'to para hindi putol!
+        height=2000, # Dinagdagan natin 'to para hindi putol!
     )
 
 st.title("🛡️ QA Ops Intelligence Hub")
