@@ -15,8 +15,10 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 * **Information Changes:** May binago ba sa information kamakailan? (e.g., corrected spelling, change status).
   
 * **Agency Confirmation:** Kinumpirma ba ng PSA na updated na ang record? Confirmed na ang changes kapag na-issuehan na si user ng bagong ePhilID with changes reflecting.
+  
 
 ---
+
 
 ### 📉 Step 2: Troubleshooting Flow (The Decision Tree)
 
@@ -31,6 +33,8 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
     * Pag lumabas ang DNI -> **SUCCESS (END)**.
     * Pag ayaw pa rin -> **Inform DNI Team** para sa escalation.
 
+      
+
 #### **Path: PSA Update Found? (NO)**
 1.  **Log Concern:** I-record ang issue sa **"No Connection Form"**.
    
@@ -40,7 +44,9 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 
 4. **DNI Team Confirmation** Kapag nag-confirm na si DNI team na okay na ang DNI, ipa-reverify si user.
 
+
 ---
+
 
 ### **NOTES**
 ● Tanging PSA lamang ang may authority na mag-update o mag-correct ng impormasyon ng isang user sa kanilang database.
