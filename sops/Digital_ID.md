@@ -17,4 +17,4 @@ If the steps above are confirmed, perform the following in order:
 
 ---
 ### 📊 Process Flowchart
-![Digital ID Troubleshooting Flow](PASTE_YOUR_LINK_HERE)
+![Digital ID Troubleshooting Flow](https://github.com/adneng/QA-Intelligence-Hub/blob/main/sops/DNI%20FLOWCHART.jpg?raw=true)
