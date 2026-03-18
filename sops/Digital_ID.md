@@ -15,55 +15,47 @@ If the steps above are confirmed, perform the following in order:
 3. **Re-sync:** Login again and check the Digital ID section.
 
 ```mermaid
-graph TD
-    %% Define the distinct START node
-    START([START])
+graph LR
+    %% Direction changed to LR (Left to Right)
     
-    %% Connect the two initial nodes to START
-    START --> Confirm[Confirm Registration]
-    START --> PVC[WITH ePhilID OR PVC]
-    
-    %% Define the first question/condition
-    Question1{Ask if there's<br/>Recent PSA Update}
-    
-    %% Connect initial nodes to the first question
-    Confirm --> Question1
-    PVC --> Question1
-    
-    %% First decision point
-    Question1 --> UpdateFound{PSA Update<br/>Found?}
-    
-    %% YES PATH
-    UpdateFound -- YES --> Issued[ISSUED NEW ePhilID]
-    Issued --> Delete[DELETE ACCOUNT]
-    Delete --> ReVerify[RE-VERIFY USING THE<br/>UPDATED INFORMATION]
-    
-    %% Second decision point
-    ReVerify --> DNIDisplays{DNI DISPLAYS?}
-    
-    %% Path to END
+    subgraph START_PHASE [Inbound / Verification]
+        START([START]) --> Confirm[Confirm Registration]
+        START --> PVC[WITH ePhilID OR PVC]
+        Confirm --> Question1{Ask if there's<br/>Recent PSA Update}
+        PVC --> Question1
+    end
+
+    subgraph ANALYSIS [PSA Validation]
+        Question1 --> UpdateFound{PSA Update<br/>Found?}
+        UpdateFound -- NO --> Log[LOG TO 'NO<br/>CONNECTION FORM']
+    end
+
+    subgraph RESOLUTION [Technical Fixes]
+        UpdateFound -- YES --> Issued[ISSUED NEW ePhilID]
+        Issued --> Delete[DELETE ACCOUNT]
+        Delete --> ReVerify[RE-VERIFY WITH<br/>UPDATED INFO]
+        ReVerify --> DNIDisplays{DNI<br/>Displays?}
+    end
+
+    subgraph ESCALATION [External Handling]
+        DNIDisplays -- NO --> Inform[INFORM DNI TEAM]
+        Inform --> PSAs[PSA'S HANDLING]
+        Log --> PSAs
+        PSAs --> Intervention[DNI TEAM INTERVENTION]
+    end
+
+    %% Final Exit
     DNIDisplays -- YES --> End([END])
-    DNIDisplays -- NO --> Inform[INFORM THE DNI TEAM]
-    Inform --> PSAs[PSA'S HANDLING]
-    PSAs --> Intervention[DNI TEAM INTERVENTION]
     Intervention --> End
-    
-    %% NO PATH
-    UpdateFound -- NO --> Log[LOG CONCERN TO<br/>'NO CONNECTION FORM']
-    Log --> PSAs
-    
-    %% Simplified Styling for High Contrast Black Text
+
+    %% Simplified Styling
     style START fill:#85a828,color:#fff,stroke:#333,stroke-width:2px
     style End fill:#a31d21,color:#fff,stroke:#333,stroke-width:2px
     style UpdateFound fill:#FFD580,stroke:#333,stroke-width:2px
     style DNIDisplays fill:#FFD580,stroke:#333,stroke-width:2px
-    style Question1 fill:#fff,stroke:#333,stroke-width:2px
-    style Confirm fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style PVC fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Issued fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Delete fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style ReVerify fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Inform fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Log fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style PSAs fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Intervention fill:#f9f9f9,stroke:#333,stroke-width:2px
+    
+    %% Box (Subgraph) Styling
+    style START_PHASE fill:transparent,stroke:#fff,stroke-dasharray: 5 5
+    style ANALYSIS fill:transparent,stroke:#fff,stroke-dasharray: 5 5
+    style RESOLUTION fill:transparent,stroke:#fff,stroke-dasharray: 5 5
+    style ESCALATION fill:transparent,stroke:#fff,stroke-dasharray: 5 5
