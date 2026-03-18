@@ -42,8 +42,24 @@ Bago mag-proceed sa technical fixes, tanungin muna ang user:
 
 ---
 
+### **NOTES**
+● Tanging PSA lamang ang may authority na mag-update o mag-correct ng impormasyon ng isang user sa kanilang database.
+
+● Pagdating sa timeline, PSA lamang ang makakapagbigay nito dahil ito ay bahagi ng kanilang internal process. Dahil dito, ang eGov Support ay hindi maaaring magbigay ng specific timeframe kung kailan maaayos ang concern.
+
+● Para sa follow-ups ng DNI-related issues, maaaring makipag-ugnayan sa info@philsys.gov.ph
+
+
+
+
+
+
+
+
+
 ### 📊 Process Map
+> **Pro-Tip for Staff:** Laging i-check kung "No Connection" ang error o "Record Not Found." Pag "Record Not Found," madalas ay nasa PSA side ang kulang (Step 1).
 ![Digital ID Flowchart](https://github.com/adneng/QA-Intelligence-Hub/blob/main/sops/DNI%20FLOWCHART.jpg?raw=true)
 
-> **Pro-Tip for Staff:** Laging i-check kung "No Connection" ang error o "Record Not Found." Pag "Record Not Found," madalas ay nasa PSA side ang kulang (Step 1).
+
 
