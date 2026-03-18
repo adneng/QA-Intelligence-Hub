@@ -1,26 +1,40 @@
 import streamlit as st
 import os
+import streamlit.components.v1 as components
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="QA Ops Hub", page_icon="🛡️", layout="wide")
 
 # --- MERMAID FUNCTION ---
 def mermaid(code):
-    st.components.v1.html(
+    components.html(
         f"""
         <div id="mermaid-container">
             <style>
-                /* Force all text inside the SVG to be black */
+                /* 1. Force all text inside boxes to be BLACK and BOLD */
                 .mermaid text {{
                     fill: black !important;
                     font-weight: bold !important;
                     font-family: 'sans-serif' !important;
+                    font-size: 14px !important;
                 }}
-                /* Force the labels on the arrows (YES/NO) to be black */
+                /* 2. Force the ARROWS and LINES to be WHITE so they show up on dark background */
+                .mermaid .edgePaths path {{
+                    stroke: #ffffff !important;
+                    stroke-width: 2px !important;
+                }}
+                /* 3. Force the ARROWHEADS to be WHITE */
+                .mermaid .marker {{
+                    fill: #ffffff !important;
+                    stroke: #ffffff !important;
+                }}
+                /* 4. Force the labels on arrows (YES/NO) to be black text on white background */
                 .mermaid .edgeLabel {{
                     color: black !important;
-                    background-color: white !important;
+                    background-color: #ffffff !important;
+                    font-weight: bold !important;
                     padding: 2px !important;
+                    border-radius: 4px !important;
                 }}
             </style>
             <pre class="mermaid">
@@ -35,7 +49,8 @@ def mermaid(code):
                 themeVariables: {{
                     'primaryColor': '#ffffff',
                     'edgeLabelBackground':'#ffffff',
-                    'tertiaryColor': '#ffffff'
+                    'tertiaryColor': '#ffffff',
+                    'lineColor': '#ffffff'
                 }}
             }});
         </script>
@@ -61,24 +76,23 @@ elif page == "SOP Library":
     sop_path = "sops"
     
     if os.path.exists(sop_path):
-        files = [f for f in os.listdir(sop_path) if f.endswith('.md')]
+        files = sorted([f for f in os.listdir(sop_path) if f.endswith('.md')])
         if files:
             selected_file = st.selectbox("Select troubleshooting guide:", files)
             with open(os.path.join(sop_path, selected_file), "r", encoding="utf-8") as f:
                 content = f.read()
                 
-                # Split content to check for Mermaid code
                 if "```mermaid" in content:
                     parts = content.split("```mermaid")
-                    st.markdown(parts[0]) # Text before flowchart
+                    st.markdown(parts[0]) 
                     
-                    # Extract and render the flowchart
                     mermaid_code = parts[1].split("```")[0]
                     mermaid(mermaid_code)
                     
-                    # Show any text after the flowchart
-                    if "```" in parts[1]:
-                        remaining = parts[1].split("```", 1)[1]
-                        st.markdown(remaining)
+                    remaining = parts[1].split("```")
+                    if len(remaining) > 1:
+                        st.markdown(remaining[1])
                 else:
                     st.markdown(content)
+    else:
+        st.error("Folder 'sops' not found!")
