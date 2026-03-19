@@ -108,3 +108,12 @@ Bago mag-escalate, siguraduhing na-check ang **"Big Five"**:
 
 &nbsp;
 &nbsp;
+
+**NOTE:**
+**For Huawei devices,** the live selfie feature may not function properly.
+**Workaround:** Complete the live selfie using a different device, then log in again using the Huawei device.
+
+&nbsp;
+&nbsp;
+
+**For Samsung devices,** aside from enabling camera access, you also need to allow permission for Photos and Media to ensure the live selfie feature works properly.
