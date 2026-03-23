@@ -9,8 +9,8 @@ Ang guide na ito ay para sa mga user na hindi nakakatanggap ng OTP (SMS) o Email
 
 ### 1️⃣ Confirm Correct Contact Details
 I-verify muna kung tama ang in-enter na impormasyon ng user:
-* **Mobile Number:** Siguraduhing tama ang format (hal. `09XXXXXXXXX` o `+639XXXXXXXXX`).
-* **Email Address:** I-check ang typos, lalo na ang `@gmail.com` o `@yahoo.com` at baka may extra spaces sa dulo.
+* **Mobile Number:** Siguraduhing tama ang format (`+639XXXXXXXXX`).
+* **Email Address:** I-check ang typos, lalo na ang `@gmail.com` o `@yahoo.com` at baka may extra spaces sa dulo o sa gitna.
 
 👉 **Tip:** Kung mali ang isa rito, kahit anong antay ay walang darating na code.
 
@@ -20,8 +20,8 @@ I-verify muna kung tama ang in-enter na impormasyon ng user:
 
 ### 2️⃣ Check Signal / Internet Connection
 Ang delay sa OTP o Email code ay madalas dahil sa:
-* Mahinang signal ng network (Smart/Globe/DITO).
-* Unstable na internet (WiFi o Data).
+* **For OTP:** Mahinang signal ng network (Smart/Globe/DITO).
+* **For Email Code:** Unstable na internet (WiFi o Data).
 
 **Advise user to:**
 * Lumipat sa lugar na may mas malakas na signal.
@@ -74,7 +74,6 @@ Kapag masyadong maraming beses nag-request o nag-enter ng maling code:
 Minsan ay sa app mismo ang problema.
 * Ipasara ang app (Force Close).
 * I-reopen ang app at subukan ulit.
-* Kung kailangan, i-logout at i-login muli.
 
 &nbsp;
 
